@@ -1,0 +1,35 @@
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[user]
+	name = elca-hub
+	email = maomuhuangying090@gmail.com
+	signingkey = A35D4AFE3D92ADA96CBD536A0B14F521F1ABD5DB
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/motekikoyo/.stCommitMsg
+	gpgsign = true
+[pull]
+	rebase = false
+[http]
+	version = HTTP/1.1
+[init]
+  defaultBranch = main
+[alias]
+  sw = switch
+  re = restore
+  st = status
+  co = checkout
+  ci = commit
+  df = diff
+  br = branch
+  ch = cherry-pick
+  sb = submodule
+  com = !git switch $(git symbolic-ref refs/remotes/origin/HEAD | cut -d '/' -f4)
