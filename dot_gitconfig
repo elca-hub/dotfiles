@@ -4,7 +4,7 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 [user]
-  name = elca-hub
+	name = elca-hub
 	signingkey = A35D4AFE3D92ADA96CBD536A0B14F521F1ABD5DB
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
