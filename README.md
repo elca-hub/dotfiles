@@ -61,7 +61,9 @@ Chezmoi has configs directory: `~/.config/chezmoi`
 
 ## Convenient Aliases
 
-| Aliase | Command |
+### Common
+
+| Alias | Command |
 |:--:|:--:|
 | `dcp` | `docker compose up` |
 | `dcd` | `docker compose down` |
@@ -72,4 +74,8 @@ Chezmoi has configs directory: `~/.config/chezmoi`
 | `eff` | `fastfetch --iterm $HOME/.config/fastfetch/icon.jpeg --logo-witdh 20` |
 
 Detail: https://github.com/elca-hub/dotfiles/blob/main/dot_zsh/alias.rc.zsh
+
+### Git
+
+See an alias section from [dot_gitconfig](https://github.com/elca-hub/dotfiles/blob/main/dot_gitconfig)
 
