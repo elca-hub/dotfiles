@@ -20,16 +20,18 @@
 [http]
 	version = HTTP/1.1
 [init]
-  defaultBranch = main
+ 	defaultBranch = main
 [alias]
-  sw = switch
-  re = restore
-  st = status
-  co = checkout
-  ci = commit
-  df = diff
-  br = branch
-  ch = cherry-pick
-  sb = submodule
-  com = !git switch $(git symbolic-ref refs/remotes/origin/HEAD | cut -d '/' -f4)
-  ad = add
+ 	sw = switch
+ 	re = restore
+ 	st = status
+ 	co = checkout
+ 	ci = commit
+ 	df = diff
+  	br = branch
+  	ch = cherry-pick
+  	sb = submodule
+  	com = !git switch $(git symbolic-ref refs/remotes/origin/HEAD | cut -d '/' -f4)
+  	ad = add
+  	pl = pull
+	ps = push
