@@ -49,8 +49,11 @@ GOPATH=$HOME/go
 PATH=$PATH:$GOPATH/bin
 
 # import custom module zsh files
+source $HOME/.zsh/private.rc.zsh # about secret environments
 source $HOME/.zsh/alias.rc.zsh # about alias
 source $HOME/.zsh/option.rc.zsh # about zsh options
+
+eval "$(git config --global user.email $MY_PRIVATE_EMAIL)"
 
 # go env setting
 export GOENV_ROOT=$HOME/.goenv
